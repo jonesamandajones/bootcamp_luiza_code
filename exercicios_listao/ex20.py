@@ -20,9 +20,12 @@
 valor_anterior = float(input('Valor inicial:R$'))
 percentual = float(input('Valor percentual de cada parcela: R$'))
 parcelas = float(input('Quantidade de parcelas: '))
-valor_anterior = valor_inicial * percentual
-
-valor_parcelas = valor_anterior + (valor_anterior * percentual)
-
-while 
+valor_anterior = valor_anterior + (valor_anterior * percentual)
+num = 1
+while num <= parcelas:
+    print(f'Parcela {num}: R$ {valor_anterior}')
+    num += 1
+    valor_anterior += valor_anterior * percentual
+    if num > parcelas:    
+        break    
 

@@ -15,19 +15,13 @@
 
 
 prefixo = int(input('Prefixo:   '))
-
-sufixo_1 = int(input('Sufixo inicial:   '))
+sufixo = int(input('Sufixo inicial:   '))
 sufixo_2 = int(input('Sufixo final:   '))
-
-
-#qnt_tel = sufixo_2 - sufixo_1
-
-sufixo = sufixo_1
-tel = [prefixo, '-', sufixo]   
+tel = str(prefixo) + '-' + str(sufixo).zfill(4)  
 
 while sufixo <= sufixo_2:
     print(tel)
     sufixo = sufixo + 1
-    tel = [prefixo, '-', sufixo]  
-    if sufixo >= sufixo_2:
+    tel = str(prefixo) + '-' + str(sufixo).zfill(4)
+    if sufixo > sufixo_2:
         break
