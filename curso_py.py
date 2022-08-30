@@ -1,5 +1,8 @@
 #função PRINT
 
+from csv import list_dialects
+
+
 print('coisas aleatórias que vão ser printadas')
 print('e aqui eu posso escrever qualquer coisa q vai ser entendida como uma string')
 # escrever python3 e nome do arquivo no terminal pra aparecer os rolês
@@ -91,4 +94,41 @@ print(string_exemplo.find('exemplo'))
 # COLEÇÕES
 # a = [1, 2, 3, 4]
 
- 
+
+
+#  listas 
+# função len(lista) mostra o comprimento (lenght) da lista 
+#  >>>>>>>>>>>> é possível criar a "compreensão de listas (list compreensions) pra criar listas organizadas.
+
+# exemplo de funcão pra percorrer uma lista e buscar valores específicos:
+# lista - [ 5, 1, 875, 51, 45, 2, 8, 452, 7, 5, 4158]
+# lista_numeros_maior_10 = []
+# for i in lista:
+#     if i > 10:
+#         lista_numeros_maior_10.append(i)
+
+# Tuplas são imutáveis mas é possível colocar uma lista dentro de uma tupla e editar essa lista 
+
+
+#FUNÇÕES    
+
+#     def nome_da_função(param1, param2):
+#         return uma soma? Uma comparação? Uma igualdade??? tudo é possível rs
+
+
+# funcionam em looping.          ex. map(ação: item, lista)   
+# MAP (transforma os itens de uma lista), FILTER (filtra elementos de uma lista), REDUCE (resume os elementos de uma lista)
+#    LAMBDA
+
+#           (lambda.x: alguma operação com x, nome da lista q se está usando) 
+
+
+#    PARÂMETROS  são os argumentos de uma função, basicamente as ideias q a função segue (ou nao) :D
+
+##          *args (cria uma tupla com vários inputs e podem ser acescentados em diferentes momentos)
+#           **kwargs (cria uma tupla com cada item pré-definido, um dicionário)
+
+##   lista.append(coisa) >>>> muito bom pra dizer que quero adicionar uma coisa que resultou de alguma função numa lista.
+#                                                       *vai pro final da lista
+
+#
