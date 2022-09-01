@@ -24,3 +24,20 @@ print(list(maior_100))
 soma_total = reduce(lambda x, y: x+y, lista)
 
 print(soma_total)
+
+
+#tipo de lista muito doida q fica bonito
+
+lista = [i for i in range(10) if i%2 == 0]
+print(lista)
+
+
+
+
+
+lista = ['banana', 'maçã', 5, 10, 'laranja', 20]
+
+for index, elemento in enumerate(lista):
+    print(index)
+    
+    

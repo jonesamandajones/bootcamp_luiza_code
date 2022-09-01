@@ -17,7 +17,6 @@ def outra_funcao():
 funcao_decorada = decorator(outra_funcao)
 funcao_decorada()
 
-
 #DECORATOOOOOOR!!!
 
 

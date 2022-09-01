@@ -7,7 +7,7 @@
 # quanto cada um deverá contribuir com a conta de energia.
 
 conta = float(input(' Informe o valor da conta de energia deste mês:   '))
-familiares = int(input('Informe o número de familiares moradores da casa neste mês:   '))
+familiares = float(input('Informe o número de familiares moradores da casa neste mês:   '))
 
 cada_um = conta / familiares
 
