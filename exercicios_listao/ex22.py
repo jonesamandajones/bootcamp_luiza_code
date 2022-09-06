@@ -15,50 +15,39 @@
 # ○ 3,ímpar,é primo
 # ○ 6,par,não é primo
 
-
-numeros = []
-
-entrada = int(input('Digite um número inteiro positivo:   '))
-
-while len(numeros) <= 10:
-    entrada = (int(input('Mais um número inteiro positivo, por favor:   ')))
-    numeros.append(entrada) 
-    if len(numeros) > 10:
-        break
-    
-
-#1
-numeros.sort()
-
-#2
-# 
-def numeros_par(numeros_set):
-    for n in numeros_set:
-        if n%2 == 0:
-            return 'é par'
-        else:
-            return 'é ímpar'
+def numero_par(n):
+    if (n % 2) == 0:
+        return 'é par'
+    else:
+        return 'é ímpar'
        
-
-def numeros_primos(numeros_set):
-    for n in numeros_set:
-        if n%2 != 0 or n == 2 and not n == 9:
-            return 'é primo'
-        else:
-            return 'não é primo'
-        
-        
+def numero_primo(n):
+    if (n % 2) == 0 and n != 2 or n == 9:
+        return 'não é primo'
+    else:
+        return 'é primo'
+              
 def number_of_numbers(numeros):
     numeros_set = list(set(numeros))
     for n in numeros_set:
         contagem = numeros.count(n)
-        print(f'{n}: {contagem}x. {numeros_par(numeros_set)}, {numeros_primos(numeros_set)}')
-    return numeros_set
+        print(f'{n}: {contagem}x. {numero_par(n)}, {numero_primo(n)}')
 
-number_of_numbers(numeros)
+def main():
+    numeros = []
 
+    entrada = int(input('Digite um número inteiro positivo:   '))
 
+    while len(numeros) <= 10:
+        entrada = (int(input('Mais um número inteiro positivo, por favor:   ')))
+        numeros.append(entrada) 
         
+        if len(numeros) >= 10:
+            break
+    
+    numeros.sort()
+    
+    number_of_numbers(numeros)
 
-            
-
+if __name__ == '__main__':
+    main()

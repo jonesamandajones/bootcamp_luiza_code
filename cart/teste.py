@@ -15,7 +15,7 @@ def buy_item():
     }
     return item
 
-def add_item_cart(item):
+def add_item_cart():
     cart.append(item)
 
 while keep_buying == 'y':
@@ -27,7 +27,7 @@ while keep_buying == 'y':
  
 
  
-def get_all_items_cart(cart):
+def get_all_items_cart():
     for i in cart:
         return i
 
@@ -45,11 +45,13 @@ def remove_item_id(cart):
     filter(lambda i: i.pop(), cart)
 
 
-# soma_total = 0
-# for s in sacola:
-#     soma_total += s[3] * s[2]
 
 
-# print(f'Valor: R$ {soma_total}')
+soma_total = 0
+for list_price in item:
+    soma_total += s[3] * s[2]
+
+
+print(f'Valor: R$ {soma_total}')
     
  
