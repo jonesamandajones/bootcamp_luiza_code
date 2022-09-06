@@ -10,18 +10,19 @@ class Professor:
     def __init__(self, nome, idade):
         self.nome = nome
         self.idade = idade
+        self.salario = 'Acesso não autorizado'
       
-    def pede_senha(__get_salario):
-        def wrapper(senha, salario):
+    def pede_senha(_get_salario):
+        def wrapper(*args, **kwargs):
             senha = input('Senha:    ')
             if senha == 'senha':
-                __get_salario(salario)
+                _get_salario(*args, **kwargs)
             else:
-                'Acesso não autorizado.'
+                print('Senha incorreta.')
         return wrapper
     
-    @pede_senha    
-    def __get_salario(self, salario):    
+    @pede_senha
+    def _get_salario(self, salario):    
         self.salario = salario
 
 
@@ -30,8 +31,9 @@ def main():
     nome = input('Informe seu nome:    ')
     idade = input('Informe sua idade:    ')
     salario = (input('Informe seu salário:    ')) 
-    professor = Professor(nome, idade, salario)
-    salario = Professor.__get_salario(salario)
+    professor = Professor(nome, idade)
+    salario = professor._get_salario(salario)
+    
     print(f'Nome {professor.nome}, idade {professor.idade} anos, seu salário é de R$ {professor.salario}.')
 
 if __name__ == '__main__':

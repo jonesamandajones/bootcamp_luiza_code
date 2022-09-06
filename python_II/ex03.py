@@ -23,7 +23,7 @@ def main():
     pessoa = PessoaJuridica(CPF, nome, idade)
     pessoa.fumante_ou_nao(fumante)
        
-    print(f'Nome {pessoa.nome}, CPF {pessoa.CPF}, idade {pessoa.idade} anos. {pessoa.juridica(CPF)}')
+    print(f'Nome {pessoa.nome}, identificação {pessoa.CPF}, idade de {pessoa.idade} anos. {pessoa.juridica(CPF)}')
 
 if __name__ == '__main__':
     main()  
